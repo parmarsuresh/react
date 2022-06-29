@@ -1,0 +1,592 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lobster&display=swap');
+
+/* heading page css */
+
+* {
+  user-select: none;
+  padding: 0%;
+  margin: 0%;
+}
+
+#iconA {
+  font-family: 'Lobster', cursive;
+  font-size: 40px;
+  margin-left: 10px;
+  text-Shadow: 10px 10px 20px red;
+}
+
+
+
+
+.context {
+  background-color: rgba(167, 147, 179, 0.293);
+  padding: 20px;
+  min-height: 600px;
+  animation-name: jay;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+
+}
+
+
+@keyframes jay {
+  0% {
+    background-color: rgba(167, 147, 179, 0.293);
+  }
+
+  100% {
+    background-color: rgba(244, 246, 247, 0.952);
+  }
+}
+
+
+.main {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  position: relative;
+  height: auto;
+
+}
+
+.first {
+  width: 50%;
+  text-align: justify;
+  padding: 20px;
+  margin-left: 20px;
+  height: auto;
+}
+
+.first>h1 {
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Lobster', cursive;
+  letter-spacing: 2px;
+  word-spacing: 10px;
+  color: rgba(137, 43, 226, 0.799);
+  text-shadow: 10px 10px 20px red;
+  animation-name: sagar;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes sagar {
+  0% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+    color: rgba(215, 125, 56, 0.768);
+  }
+}
+
+
+/* navbar */
+.ullist>li {
+  margin-left: 10px;
+}
+
+
+.first>p {
+  text-align: justify;
+  text-indent: 200px;
+  margin-top: 50px;
+  text-transform: capitalize;
+  word-spacing: 10px;
+  letter-spacing: 2px;
+  font-family: Great Vibes, cursive;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.first>button {
+  background-color: rgb(141, 132, 241);
+  width: 200px;
+  height: 40px;
+  border-radius: 20px;
+  transition: all 2s ease-in-out;
+  border: 0px;
+
+  color: rgb(245, 239, 239);
+  border: 3px solid rgba(12, 12, 18, 0.303);
+  box-shadow: 10px 10px 20px rgb(18, 171, 57);
+}
+
+.btn1 {
+  text-decoration: none;
+  line-height: 40px;
+  display: block;
+  width: 200px;
+  border-radius: 20px;
+  height: 40px;
+  font-size: bold;
+  color: white;
+  user-select: none;
+
+}
+
+.first>button:hover {
+  background-color: blueviolet;
+  color: white;
+  font-size: 22px;
+  font-weight: bolder;
+}
+
+
+.second {
+  padding: 20px;
+  height: auto;
+}
+
+.second>img {
+  border-radius: 0% 50% 0% 50%;
+  width: 90%;
+  height: 90%;
+  transition: all 2s;
+  transform: rotateY(0deg);
+  border: none;
+  outline: none;
+  background-color: transparent;
+  filter: drop-shadow(20px 20px 20px rgba(22, 25, 22, 0.945));
+  animation-name: sagar1;
+  animation-duration: 5s;
+  animation-timing-function: ease;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes sagar1 {
+  0% {
+    transform: rotateY(0deg);
+  }
+
+  50% {
+    transform: rotateY(180deg);
+  }
+
+  100% {
+    transform: rotateY(360deg);
+  }
+
+}
+
+.footer {
+  background-color: rgba(154, 131, 131, 0.412);
+  width: 100%;
+  min-height: 70px;
+  box-sizing: border-box;
+}
+
+.footer>h3 {
+  text-align: right;
+  line-height: 70px;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-style: italic;
+  color: rgb(55, 47, 79);
+  margin-right: 20px;
+}
+
+.search {
+
+  text-align: center;
+  height: 50px;
+  padding: 10px;
+}
+
+.search>input {
+  width: 300px;
+  height: 40px;
+  border-radius: 10px;
+  font-weight: bold;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  box-shadow: 10px 10px 39px rgb(83, 102, 102);
+}
+
+/*contact us*/
+
+.mfdiv {
+  width: 100%;
+  min-height: 1000px;
+  padding: relative;
+}
+
+.fdiv {
+  width: 50%;
+  position: absolute;
+  left: calc(50% - 25%);
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px rgb(118, 165, 118);
+  padding: 20px;
+
+}
+
+/*card css */
+
+
+.card {
+  overflow: hidden;
+  box-shadow: 5px 5px 20px rgb(14, 13, 11);
+}
+
+.card>img {
+  transition: all 2s;
+}
+
+.card>img:hover {
+  transform: scale(1.5, 1.2);
+
+}
+
+@media screen and (max-width:900px) {
+
+  .head {
+    width: 200px;
+  }
+
+
+  #iconA {
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+    margin-left: 0px;
+    text-Shadow: 10px 10px 20px red;
+  }
+
+  .first {
+    width: 100%;
+    text-align: justify;
+    padding: 20px;
+    margin-left: 0px;
+    height: auto;
+  }
+
+
+  .first>h1 {
+    text-align: center;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 2px;
+    word-spacing: 20px;
+    color: blueviolet;
+    text-shadow: 10px 10px 20px red;
+
+  }
+
+  .todoL {
+    min-width: 80%;
+    left: 10%;
+    margin-left: 0em;
+  }
+
+
+  .first>p {
+    text-indent: 100px;
+    margin-top: 50px;
+  }
+
+
+}
+
+
+@media screen and (max-width:300px) {
+
+  .main {
+    width: 100%;
+  }
+
+  .first {
+    width: 100%;
+  }
+
+  .first>h1 {
+    font-size: 18px;
+  }
+
+  .first>p {
+    font-size: 10px;
+  }
+
+
+  #iconA {
+    font-family: 'Lobster', cursive;
+    font-size: 15px;
+    margin-left: 0px;
+    text-Shadow: 10px 10px 20px red;
+  }
+
+  .todoL {
+    position: relative;
+    min-width: 80%;
+    left: 10%;
+    margin-left: 0%;
+
+  }
+
+
+
+  .footer>h3 {
+    font-size: 13px;
+  }
+
+}
+
+
+
+
+/* keep node css */
+
+
+.keepdiv {
+  position: relative;
+  width: 80%;
+  min-height: 180px;
+  background-color: rgba(245, 245, 220, 0.181);
+  box-shadow: 20px 20px 60px 10px rgb(112, 116, 65);
+  left: 10%;
+  border-radius: 30px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  padding: 15px;
+  user-select: none;
+}
+
+.keepdiv>input {
+  display: block;
+  width: 100%;
+  height: auto;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: black;
+}
+
+.keepdiv>textarea {
+  display: block;
+  width: 100%;
+  height: auto;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  margin-top: 18px;
+  color: black;
+}
+
+.keepdiv>button {
+  display: block;
+  margin-top: 10px;
+  width: 40px;
+  padding-top: 0%;
+  height: 40px;
+  font-size: 20px;
+  text-align: center;
+  box-sizing: border-box;
+  font-weight: bold;
+  border-radius: 50%;
+  color: white;
+  background-color: rgba(196, 211, 218, 0.932);
+  cursor: pointer;
+  float: right;
+  margin-top: 50px;
+}
+
+.keepdiv>button:hover {
+  background-color: rgba(255, 0, 0, 0.733);
+}
+
+.keepdivL {
+  position: relative;
+  width: 100%;
+  height: auto;
+  border-radius: 30px;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.divL {
+  width: 350px;
+  height: auto;
+  margin-top: 10px;
+  background-color: beige;
+  box-shadow: 20px 20px 60px 10px rgb(112, 116, 65);
+  border-radius: 30px;
+  padding: 10px;
+}
+
+.divL>h1 {
+
+  text-align: center;
+  font-family: cursive;
+  background-color: blueviolet;
+  color: aliceblue;
+  font-weight: bold;
+
+}
+
+.divL>h3 {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.divL>button {
+  display: block;
+  margin-top: 10px;
+  width: 40px;
+  padding-top: 0%;
+  height: 40px;
+  font-size: 20px;
+  text-align: center;
+  box-sizing: border-box;
+  font-weight: bold;
+  border-radius: 50%;
+  color: white;
+  background-color: rgba(196, 211, 218, 0.932);
+  cursor: pointer;
+  float: right;
+  margin-top: 50px;
+
+}
+
+
+/*todo list css */
+
+.todoL {
+  position: relative;
+  width: 35%;
+  height: auto;
+  border: 0px solid blue;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 20px 20px 60px 10px rgb(112, 116, 65);
+  user-select: none;
+
+}
+
+.listname {
+  width: 100%;
+  display: flex;
+  flex-direction: raw;
+  flex-wrap: wrap;
+}
+
+.todoL>h1 {
+  text-align: center;
+  font-family: cursive;
+  background-color: blueviolet;
+  color: aliceblue;
+  font-weight: bold;
+}
+
+.todoL>.listname>input[type="text"] {
+  display: block;
+  width: 80%;
+  float: left;
+  height: 30px;
+  border: none;
+  border-bottom: 3px solid blue;
+  outline: none;
+  margin-top: 20px;
+  font-weight: bold;
+  background-color: transparent;
+  text-align: center;
+  font-size: 22px;
+  float: left;
+}
+
+.todoL>.listname>button {
+  display: block;
+  margin-top: 20px;
+  width: 40px;
+  height: auto;
+  text-align: center;
+  box-sizing: border-box;
+  font-weight: bold;
+  border-radius: 50%;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+}
+
+.todoL>.listname>button:hover {
+  background-color: green;
+}
+
+.Lshow {
+  width: 100%;
+  height: 280px;
+  overflow: auto;
+}
+
+.Lshow>ul {
+  list-style: outside;
+  text-decoration: none;
+  padding: 5% 20px;
+  margin: 0%;
+  min-width: 100%;
+
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-width: 100%;
+}
+
+.Listbtn {
+  min-width: 30%;
+  display: flex;
+  flex-direction: row;
+  padding-top: 5px;
+  justify-content: space-around;
+}
+
+.Listbtn>.s {
+  display: block;
+  text-align: center;
+  font-size: 27px;
+  font-weight: bolder;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+/* 
+.list>span {
+ 
+} */
+
+.Listbtn>.s :hover {
+  color: red;
+  cursor: pointer;
+
+}
+
+.list>li {
+  display: block;
+  width: auto;
+  font-weight: bold;
+  font-size: 25px;
+  color: rgb(57, 7, 27);
+  font-family: monospace;
+  text-shadow: 2px 2px 2px rgba(133, 125, 76, 0.73);
+}
